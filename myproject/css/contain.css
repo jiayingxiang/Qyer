@@ -1,0 +1,126 @@
+*{
+margin:0;
+padding:0;
+outline:none;
+font-family: "Microsoft YaHei","微软雅黑","宋体",helvetica,"Hiragino Sans GB";
+box-sizing:border-box;
+}
+#bg{
+	background:url('/img/web_login_bg.jpg');
+}
+/*顶部*/
+div.login_logo{
+	width:380px;
+	height:46px;
+	color:#fff;
+	margin:0 650px;
+	padding-top:150px;
+}
+div.login_logo img{
+	height:46px;
+	margin-bottom:-9px;
+}
+/*注册框*/
+.reg-block{
+	width:1000px;
+	height:600px;
+	/*padding-bottom:55px;*/
+	background-color:rgba(255,255,255,0.0);
+	margin:0 auto;
+	padding-top:50px;
+	/*box-shadow:0 3px 3px #cbc9c9;*/
+	position:relative;
+}
+
+.reg-form{
+	text-align:center;
+	position:relative;
+}
+.reg-form .ulabel{
+	width:340px;
+	height:45px;
+	float:left;
+	text-align:right;
+	line-height:45px;
+	margin:10px;
+	font-weight:bold;
+	font-size:18px;
+	color:#fff;
+}
+.reg-form span{
+	width:240px;
+	height:45px;
+	float:left;
+	text-align:left;
+	line-height:65px;
+	color:#fff;
+}
+.reg-form #uname,#upwd,#cpwd,#uphone,#uemail{
+	float:left;
+	width:320px;
+	height:45px;
+	margin:10px;
+	text-indent:12px;
+}
+.reg-form .ubtn{
+	position:absolute;
+	top:350px;
+	left:370px;
+	width:320px;
+	height:45px;
+	background:#5cad77;
+	color:white;
+	font-size:16px;
+	border-radius:5px;
+	cursor:pointer;
+	border:1px solid #5cad77;
+}
+.reg_bottom{
+	position:absolute;
+	top:390px;
+	left:330px;
+	color:#fff;
+}
+.reg_bottom span:first-child a{
+	text-decoration:none;
+	color:#08FA21;
+}
+.reg_bottom span:last-child a{
+	text-decoration:none;
+	color:#08FA21;
+}
+/*底部*/
+.footer{
+	width:100%;
+	padding:30px 0;
+	background:#363636;
+	color:#959595;
+	clear:both;
+}
+.parent{
+	display:flex;
+	justify-content:space-around;
+}
+.one div:first-child,.two div:first-child,.three div:first-child,.four div:first-child{
+	color:#c2c2c2;
+	font-size:12px;
+	font-weight:bold;
+}
+.footer ul li{
+	list-style:none;
+}
+.footer a{
+	text-decoration:none;
+	color:#959595;
+	font-size:12px;
+}
+.footer_bottom{
+	font-size:10px;
+	display:flex;
+	margin-top:30px;
+	margin-left:100px;
+}
+.footer_bottom .footer_img img{
+	width:100px;
+	margin-left:100px;
+}

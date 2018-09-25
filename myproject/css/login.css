@@ -1,0 +1,106 @@
+*{
+margin:0;
+padding:0;
+outline:none;
+font-family: "Microsoft YaHei","微软雅黑","宋体",helvetica,"Hiragino Sans GB";
+box-sizing:border-box;
+}
+#bg{
+	background:url('/img/web_login_bg.jpg');
+	height:780px;
+}
+/*顶部*/
+div.login_logo{
+	width:380px;
+	height:46px;
+	color:#fff;
+	margin:0 650px;
+	padding-top:100px;
+}
+div.login_logo img{
+	height:46px;
+	margin-bottom:-9px;
+}
+/*登录框*/
+div.login{
+	width:360px;
+	height:380px;
+	border:1px solid #d7d7d7;
+	box-shadow:0 3px 3px #cbc9c9;
+	background:#fff;
+	position:absolute;
+	top:200px;
+	left:560px;
+}
+div.login form{
+	text-align:center;
+}
+#uname,#upwd{
+	width:300px;
+	height:40px;
+	border:1px solid #d7d7d7;
+	text-indent:12px;
+}
+#btn{
+	width:300px;
+	height:36px;
+	border-radius:3px;
+	cursor:pointer;
+	color:#fff;
+	background-color:#3f9f5f;
+	border:1px solid #3f9f5f;
+	margin-top:40px;
+}
+.input_1,.input_2{
+	padding-top:50px;
+}
+.login_bottom{
+	text-align:center;
+	padding-top:20px;
+	color:#959595;
+}
+.login_bottom a{
+	color:#3f9f5f;
+}
+#shownames,#showupwd{
+	font-size:14px;
+	color:red;
+	width:130px;
+	height:20px;
+	text-align:right;
+}
+/*底部*/
+.footer{
+	width:100%;
+	padding:30px 0;
+	background:#363636;
+	color:#959595;
+	clear:both;
+}
+.parent{
+	display:flex;
+	justify-content:space-around;
+}
+.one div:first-child,.two div:first-child,.three div:first-child,.four div:first-child{
+	color:#c2c2c2;
+	font-size:12px;
+	font-weight:bold;
+}
+.footer ul li{
+	list-style:none;
+}
+.footer a{
+	text-decoration:none;
+	color:#959595;
+	font-size:12px;
+}
+.footer_bottom{
+	font-size:10px;
+	display:flex;
+	margin-top:30px;
+	margin-left:100px;
+}
+.footer_bottom .footer_img img{
+	width:100px;
+	margin-left:100px;
+}

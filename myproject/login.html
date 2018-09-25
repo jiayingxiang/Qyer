@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="./img/data_image.png">
+<title>穷游网</title>
+<link rel="stylesheet" href="css/login.css">
+<script src="js/login.js"></script>
+</head>
+<body>
+	<section id="bg">
+	<!--logo图标-->
+	<div class="login_logo">
+		<h1>
+			<a href="http://127.0.0.1:3000/index.html"><img src="./img/login_logo.png"></a>
+			登录
+		</h1>
+	</div>
+	<!--登录框-->
+		<div class="login">
+			<form>
+				<p class="input_1">
+					<input type="text" id="uname" placeholder="请输入您的帐号" title="帐号" onblur="names_blur()"><p id="shownames"></p>
+				</p>
+				<p class="input_2">
+					<input type="password" id="upwd" placeholder="请输入您的密码" title="密码" onblur="upwd_blur()"><p id="showupwd"></p>
+				</p>
+				<input type="button" value="登录" id="btn" onclick="getLogin()">
+			</form>
+			<div class="login_bottom">
+				<p>没有穷游帐号？<a href="http://127.0.0.1:3000/register.html">立即注册</a></p>		
+			</div>
+		</div>
+	</section>
+	<!--底部-->
+	<div class="footer">
+		<div class="parent">
+			<div class="one">
+				<div>关于我们</div>
+				<div>
+					<ul>
+					<li><a href="http://127.0.0.1:3000/story.html" target="_blank">穷游简介</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">合作伙伴</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="two">
+				<div>加入穷游</div>
+				<div><a href="#">招聘职位</a></div>
+			</div>
+			<div class="three">
+				<div>网站条款</div>
+				<div>
+					<ul>
+						<li><a href="#">会员条款</a></li>
+						<li><a href="#">社区指南</a></li>
+						<li><a href="#">版权声明</a></li>
+						<li><a href="#">免责声明</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="four">
+				<div>帮助中心</div>
+				<div>
+					<ul>
+						<li><a href="#">新手上路</a></li>
+						<li><a href="#">使用帮助</a></li>
+						<li><a href="#">网站地图</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="footer_img">
+				<a href="http://127.0.0.1:3000/index.html"><img src="./img/login_logo.png" alt=""></a>
+			</div>
+			<div>
+				<div>2004-2017&nbsp;&copy;&nbsp;穷游网™&nbsp;qyer.com&nbsp;All&nbsp;rights reserved.&nbsp;&nbsp;<a href="#">京ICP备12003524号</a>&nbsp;&nbsp;京公网安备11010502023470</div>
+				<div>
+					<a href="#">穷游网</a>为<a href="#">旅行者</a>提供原创实用的<a href="#">出境游</a><a href="#">旅行指南</a>和<a href="#">旅游攻略</a>、<a href="#">旅行社区</a>和<a href="#">问答</a>交流平台，并提供<a href="#">签证</a>、<a href="#">保险</a>、<a href="#">机票</a>、<a href="#">酒店预订</a>、<a href="#">租车</a>等服务
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

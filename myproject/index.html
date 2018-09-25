@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="./img/data_image.png">
+	<title>【穷游网】出境游_旅游攻略_自助游攻略_游记攻略_境外旅游 - 穷游网,旅途永无穷尽</title>
+	<script src="./js/jquery-1.11.3.js"></script>
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./js/index.js"></script>
+	<script src="./js/dom.js"></script>
+</head>
+<body>
+<!--导航栏-->
+	<header>
+		<div class="head">
+			<div><img src="./img/qyer.png" alt=""></div>
+			<ul class="head_nav">
+				<li class="head_nav_item1"><a href="#" class="item_a1">目的地</a></li>
+				<li class="head_nav_item2"><a href="#" class="item_a2">锦囊</a></li>
+				<li class="head_nav_item3"><a href="#" class="item_a3">社区</a>
+					<span class="icon1"></span>
+					<div class="diamond1">
+						<div class="diamond_icon1"></div>
+						<div class="diamond_one">
+							<ul>
+								<li id="list-q-layer"><a href="#">旅行论坛</a>
+									<div class="mark"></div>
+									<div class="q-layer">
+										<div class="section-title">
+											<a href="#">全部版块<div class="mark"></div></a>
+											<span>热门版块</span>
+										</div>
+										<div class="section-item">
+											<dl>
+												<dt>兴趣小组</dt>
+													<dd>
+														<a href="#">结伴同游</a>
+														<a href="#">签证</a>
+														<a href="#">旅行摄影</a>
+														<a href="#">潜水俱乐部</a>
+														<a href="#">带孩子旅行</a>
+														<a href="#">明信片</a>
+														<a href="#">旅行购物</a>
+													</dd>
+											</dl>
+										</div>
+										<div class="section-item">
+											<dl>
+												<dt>穷游欧洲</dt>
+													<dd>
+														<a href="#">法国/摩纳哥</a>
+														<a href="#">德国</a>
+														<a href="#">英国/爱尔兰</a>
+														<a href="#">瑞士/列支墩式登</a>
+														<a href="#">土耳其</a>
+														<a href="#" id="a1">挪威/瑞典/芬兰/丹麦/冰岛</a>
+														<a href="#">意大利/梵蒂冈/圣马力诺/马耳他</a>
+													</dd>
+											</dl>
+										</div>
+										<div class="section-item">
+											<dl>
+												<dt>穷游亚洲</dt>
+												<dd>
+													<a href="#">台湾</a>
+													<a href="#">日本</a>
+													<a href="#">泰国</a>
+													<a href="#">新加坡</a>
+													<a href="#">斯里卡兰</a>
+													<a href="#">香港/澳门</a>
+													<a href="#">马来西亚/文莱</a>
+													<a href="#">柬埔寨</a>
+													<a href="#" id="a2">马尔代夫</a>
+													<a href="#">缅甸</a>
+													<a href="#">伊朗</a>
+													<a href="#">印度/孟加拉</a>
+												</dd>
+											</dl>	
+										</div>
+										<div class="section-item">
+											<dl>
+												<dt>穷游美洲</dt>
+												<dd>
+													<a href="#">加拿大</a>
+													<a href="#">美国</a>
+													<a href="#">中美</a>
+													<a href="#">南美/南极</a>
+												</dd>
+											</dl>
+										</div>
+										<div class="section-item">
+											<dl>
+												<dt>穷游大洋洲</dt>
+												<dd>
+													<a href="#">澳大利亚</a>
+													<a href="#">新西兰</a>
+													<a href="#">太平洋海岛</a>
+												</dd>
+											</dl>
+										</div>
+										<div class="section-item">
+											<dl>
+												<dt>穷游非洲</dt>
+												<dd>
+													<a href="#">东非地区</a>
+													<a href="#">非洲海岛</a>
+													<a href="#">北非地区</a>
+													<a href="#">非洲其它国家</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+								<li><a href="#">旅行问答</a></li>
+								<li><a href="#">JNE旅行生活美学</a></li>
+								<li><a href="#">结伴同游</a></li>
+								<li><a href="#">负责任的旅行</a></li>
+								<li><a href="#">特别策划</a></li>
+								<li><a href="#">旅行精选视频</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="head_nav_item4"><a href="#" class="item_a4">行程助手</a></li>
+				<li class="head_nav_item5"><a href="#" class="item_a5">商城</a>
+					<span class="line-flag">
+						<img src="./img/z-flag.gif" alt="">
+					</span>
+					<span class="icon2"></span>
+					<div class="diamond2">
+						<div class="diamond_icon2"></div>
+						<div class="diamond_two">
+							<ul>
+								<li><a href="#">机酒自由行</a></li>
+								<li><a href="#">当地玩乐</a></li>
+								<li><a href="#">签证</a></li>
+								<li><a href="#">租车自驾</a></li>
+								<li><a href="#">邮轮</a></li>
+								<li><a href="#">保险</a></li>
+								<li><a href="#">私人订制</a></li>
+								<li><a href="#">欧洲铁路</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="head_nav_item6"><a href="#" class="item_a6">机票</a></li>
+				<li class="head_nav_item7"><a href="#" class="item_a7">酒店·民宿</a>
+					<span class="icon3"></span>
+					<div class="diamond3">
+						<div class="diamond_icon3"></div>
+						<div class="diamond_three">
+							<ul>
+								<li><a href="#">酒店</a></li>
+								<li><a href="#">爱彼迎</a></li>
+								<li><a href="#">华人旅馆</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="head_nav_item8"><a href="#" class="item_a8">独家深度</a>
+					<span class="icon4"></span>
+					<div class="diamond4">
+						<div class="diamond_icon4"></div>
+						<div class="diamond_four">
+							<ul>
+								<li><a href="#">特色长线</a></li>
+								<li><a href="#">独家日游</a></li>
+								<li><a href="#">Q—Home</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="head_nav_item9"><a href="#" class="item_a9">穷游App</a>
+					<span class="icon5"></span>
+					<div class="diamond5">
+						<div class="diamond_icon5"></div>
+						<div class="diamond_five">
+							<ul>
+								<li><a href="#">穷游App</a></li>
+								<li><a href="#">行程助手APP</a></li>
+								<li><a href="#">穷游锦囊APP</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="head_user">
+				<a href="http://127.0.0.1:3000/login.html" target="_blank">登录</a>
+				<a href="http://127.0.0.1:3000/register.html" target="_blank">注册</a>
+			</div>
+		</div>
+	</header>
+	<!--轮播图区域-->
+	<div class="carousel">
+			<div class="carousel-inner">
+				<div>
+					<div class="carousel-list active" style="z-index:5">
+						<img src="./img/15356005327190.jpg">	
+					</div>
+					<div class="carousel-list" style="z-index:4">
+						<img src="./img/15356004855398.jpg">
+					</div>
+					<div class="carousel-list" style="z-index:3">
+						<img src="./img/15356004557681.jpg">
+					</div>
+					<div class="carousel-list" style="z-index:2">
+						<img src="./img/15356004209869.jpg">
+					</div>
+					<div class="carousel-list" style="z-index:1">
+						<img src="./img/15356003656836.jpg">
+					</div>
+				</div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="carousel-search">
+				<div class="search-list">
+					<ul class="search-item">
+						<li><a href="#content1" data-toggle="tab" data-target="#content1">目的地</a></li>
+						<li><a href="#content2" data-toggle="tab" data-target="#content2">做行程</a></li>
+						<li><a href="#content3" data-toggle="tab" data-target="#content3">买折扣</a></li>
+						<li><a href="#content4" data-toggle="tab" data-target="#content4">酒店</a></li>
+					</ul>
+				</div>
+				<div class="form-control">
+					<div id="content1">
+						<form>
+							<input type="text" class="txt" placeholder="你要去哪儿">
+							<button type="submit" class="search-btn">搜索</button>
+						</form>
+					</div>
+					<div id="content2">
+						<p>一分钟搞定你的攻略</p>
+						<a href="#">创建行程</a>
+						<a href="#">免费定制</a>
+					</div>
+					<div id="content3">
+						<form>
+							<input type="text" class="txt" placeholder="搜索目的地/折扣类型/关键词">
+							<button type="submit" class="search-btn">搜索</button>
+						</form>
+					</div>
+					<div id="content4">
+						<form>
+							<input type="text" class="txt" placeholder="请输入目的地/酒店名">
+							<button type="submit" class="search-btn">搜索</button>
+						</form>
+					</div>
+				</div>
+			</div>
+	</div>
+	<!--广告图片-->
+		<div class="section-gray">
+				<a href="#"><img src="./img/15356961798448 (2).jpg"></a>
+				<a href="#"><img src="./img/15356961798448.jpg"></a>
+		</div>
+	<!--主体内容①-->
+		<div class="section">
+			<div class="wrapper">
+				<h1 class="title">今日推荐</h1>
+				<div class="recommend">
+					<div class="recommend-item">
+						<!--<div>视频</div>
+						<video src="./video/c9af.mp4" preload controls loop></video>
+						<a href="#" class="info">小墨阿猴寻味伦敦唐人街—榴莲月饼大写的好吃</a><br>
+						<span class="bottom-title">元气大暴走</span>
+						<span class="bottom-place">伦敦</span>-->
+					</div>
+					<div class="recommend-item">
+						<!--<div>折扣</div>
+						<img src="./img/section-2.jpg" class="image">
+						<a href="#">[国庆][中秋][暑期]上海直飞甲米6-7天往返含税机票(含一晚甲米品</a><br>
+						<span class="bottom-title">上海</span>
+						<span class="bottom-place"><em>999</em>元起</span>-->
+					</div>
+					<div class="recommend-item">
+						<!--<div>游记</div>
+						<img src="./img/section-3.jpg" class="image">
+						<a href="#">【阿拉蕾】逃离炎夏，去昆士兰过个不冷的冬天（凯恩斯、道格</a><br>
+						<span class="bottom-title">阿呀阿拉蕾</span>
+						<span class="bottom-place">35917人浏览过</span>-->
+					</div>
+					<div class="recommend-item">
+						<p>让我们更懂你</p>
+						<p>拥有穷游账号，获得更准确的推荐</p>
+						<a href="http://127.0.0.1:3000/register.html" id="reg">立即注册</a>
+						<p>已有帐号？<a href="http://127.0.0.1:3000/login.html" id="login">登录</a></p>
+						<p>
+							<a href="#" class="a_icon"><img src="./img/QQ.png"></a>
+							<a href="#" class="a_icon"><img src="./img/weibo.png"></a>
+							<a href="#" class="a_icon"><img src="./img/weixin.png"></a>
+						</p>
+					</div>
+				</div>
+				<div class="recommend1">
+					<div class="recommend-item">
+						<!--<div>折扣</div>
+						<img src="./img/section-4.jpg" class="image">
+						<a href="#">[全年爆款][国庆][枫叶季]天津直飞大阪/东京6天往返含税机票(可</a><br>
+						<span class="bottom-title">天津</span>
+						<span class="bottom-place"><em>999</em>元起</span>-->
+					</div>
+					<div class="recommend-item">
+						<!--<div>游记</div>
+						<img src="./img/section-1.jpg" class="image">
+						<a href="#">【阿拉蕾】逃离炎夏，去昆士兰过个不冷的冬天（凯恩斯、道格</a><br>
+						<span class="bottom-title">空心大哥</span>
+						<span class="bottom-place">14038人浏览过</span>-->
+					</div>
+					<div class="recommend-item">
+						<!--<div>游记</div>
+						<img src="./img/section-5.jpg" class="image">
+						<a href="#">最后的清流，四万十川。四国的秘境，大步危。龙马的故乡，高</a><br>
+						<span class="bottom-title">飘来荡去宝宝酱</span>
+						<span class="bottom-place">19250人浏览过</span>-->
+					</div>
+					<div class="recommend-item">
+						<!--<div>游记</div>
+						<img src="./img/section-6.jpg" class="image">
+						<a href="#">有冰雪的圣诞节，在白天最短的日子去了白天最短的地方，挪威</a><br>
+						<span class="bottom-title">fbird22</span>
+						<span class="bottom-place">41510人浏览过</span>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--主体内容②-->
+		<div class="section-two">
+			<h1>穷游商城</h1>
+			<div class="card-list">
+					<div class="card" title="【国内包邮】欧洲铁路两国自选通票(欧铁官方一级代理)">
+						<!--<img src="./img/product-1.jpg">
+						<svg width="128" height="30" viewBox="0 0 128 30" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 4</title><path d="M0 0h128l-6.812 25.546A6 6 0 0 1 115.39 30H0V0z" fill="#FF7362" fill-rule="evenodd"/></svg>
+						<p>距结束&nbsp;10天</p>
+						<div class="block">
+							<div class="title"><a href="#">【国内包邮】欧洲铁路两国自选通票(欧铁官方一级...</a></div>
+							<div class="tag"><a href="#">秒杀</a></div>
+							<div class="price">¥<em>982</em>元起</div>
+						</div>-->
+					</div>
+					<div class="card" title="上海直飞返斯里兰卡+马尔代夫9天8晚自由行（兰卡酒店任选+马代岛屿任搭+可私人定制+微笑锡兰+浪漫海岛+惠游双国）">
+						<!--<img src="./img/product-2.jpg">
+						<svg width="128" height="30" viewBox="0 0 128 30" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 4</title><path d="M0 0h128l-6.812 25.546A6 6 0 0 1 115.39 30H0V0z" fill="#FF7362" fill-rule="evenodd"/></svg>
+						<p>距结束&nbsp;10天</p>
+						<div class="block">
+							<div class="title"><a href="#">上海直飞返斯里兰卡+马尔代夫9天8晚自由行（...</a></div>
+							<div class="tag"><a href="#">限时立减100元</a></div>
+							<div class="price">¥<em>6999</em>元起</div>
+						</div>-->
+					</div>
+					<div class="card" title="【秒杀】限时特惠 泰国普吉岛 皇帝岛珊瑚岛 双层双体巨型豪华帆船一日游(含午餐+一次性咬嘴+活宝中文导游+全岛免费接送)">
+						<!--<img src="./img/product-3.jpg">
+						<svg width="128" height="30" viewBox="0 0 128 30" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 4</title><path d="M0 0h128l-6.812 25.546A6 6 0 0 1 115.39 30H0V0z" fill="#FF7362" fill-rule="evenodd"/></svg>
+						<p>距结束&nbsp;10天</p>
+						<div class="block">
+							<div class="title"><a href="#">【秒杀】限时特惠 泰国普吉岛 皇帝岛珊瑚岛 双层...</a></div>
+							<div class="tag"><a href="#">秒杀</a></div>
+							<div class="price">¥<em>189</em>元起</div>
+						</div>-->
+					</div>
+			</div>
+			<div class="card-list1">
+					<div class="card" title="[中秋][国庆]北京往返苏梅岛5-7天自由行(亲子/蜜月+五星航空新航+40新币代金券+赠送境外旅游险)">
+						<!--<img src="./img/product-4.jpg">
+						<svg width="128" height="30" viewBox="0 0 128 30" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 4</title><path d="M0 0h128l-6.812 25.546A6 6 0 0 1 115.39 30H0V0z" fill="#FF7362" fill-rule="evenodd"/></svg>
+						<p>距结束&nbsp;10天</p>
+						<div class="block">
+							<div class="title"><a href="#">[中秋][国庆]北京往返苏梅岛5-7天自由行(亲子/蜜...</a></div>
+							<div class="tag"><a href="#">限时立减100元</a></div>
+							<div class="price">¥<em>4490</em>元起</div>
+						</div>-->
+					</div>
+					<div class="card" title="泰国普吉岛 遨游号豪华游艇 水陆双拼攀牙湾一日游（酒店接送+午餐+中文导游+24小时电话服务）">
+						<!--<img src="./img/product-5.jpg">
+						<svg width="128" height="30" viewBox="0 0 128 30" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 4</title><path d="M0 0h128l-6.812 25.546A6 6 0 0 1 115.39 30H0V0z" fill="#FF7362" fill-rule="evenodd"/></svg>
+						<p>距结束&nbsp;10天</p>
+						<div class="block">
+							<div class="title"><a href="#">泰国普吉岛 遨游号豪华游艇 水陆双拼攀牙湾一日...</a></div>
+							<div class="tag"><a href="#">秒杀</a></div>
+							<div class="price">¥<em>400</em>元起</div>
+						</div>-->
+					</div>
+					<div class="card" title="深圳/广州直飞沙巴5-6天自由行(赠接送机+电话卡,可选五星酒店)">
+						<!--<img src="./img/product-6.jpg">
+						<svg width="128" height="30" viewBox="0 0 128 30" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 4</title><path d="M0 0h128l-6.812 25.546A6 6 0 0 1 115.39 30H0V0z" fill="#FF7362" fill-rule="evenodd"/></svg>
+						<p>距结束&nbsp;10天</p>
+						<div class="block">
+							<div class="title"><a href="#">深圳/广州直飞沙巴5-6天自由行(赠接送机+电话...</a></div>
+							<div class="tag"><a href="#">限时立减150元</a></div>
+							<div class="price">¥<em>2380</em>元起</div>
+						</div>-->
+					</div>
+			</div>
+			<a href="#" id="more-a">查看更多折扣</a>
+		</div>
+		<!--主体内容③-->
+		<div class="section-three">
+			<h1>热门游记与话题</h1>
+			<div class="palette">
+				<div class="thread">
+					<div class="thread-item" title="今日话题|中秋国庆怎么High？进来看看能否同行约伴~">
+						<!--<div class="pic">
+							<img src="./img/section-7.jpg" alt="">
+							<div class="discuss"><img src="./img/LT.png"><span>14</span></div>
+						</div>
+						<div class="user-info">
+							<span><img src="./img/head-portrait-1.jpg" alt=""></span>
+							<span><a href="#">穷游大秘书</a></span>
+						</div>
+						<div class="caption">
+							<a href="#">今日话题|中秋国庆怎么High？进来看看能否同行约伴~</a>
+						</div>
+						<div class="icon-three">
+							<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="100" height="64" viewBox="0 0 100 64"><path fill="#ED7063" d="M100 52H0V-1h100v53z"/><path fill="#AE564C" d="M0 52h10v11z"/></svg>
+						</div>-->
+						<p>精华</p>
+					</div>
+					<div class="thread-item" title="维京游轮旅游全攻略｜再游多瑙河，听时光与音乐共鸣">
+						<!--<div class="pic">
+							<img src="./img/section-8.jpg" alt="">
+							<div class="discuss"><img src="./img/LT.png"><span>22</span></div>
+						</div>
+						<div class="user-info">
+							<span><img src="./img/head-portrait-2.jpg" alt=""></span>
+							<span><a href="#">小A家的饭团</a></span>
+						</div>
+						<div class="caption">
+							<a href="#">维京游轮旅游全攻略｜再游多瑙河，听时光与音乐共鸣</a>
+						</div>
+						<div class="icon-three">
+							<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="100" height="64" viewBox="0 0 100 64"><path fill="#ED7063" d="M100 52H0V-1h100v53z"/><path fill="#AE564C" d="M0 52h10v11z"/></svg>
+						</div>-->
+						<p>精华</p>
+					</div>
+					<div class="thread-item" title="【盒饭看世界】雪山与森林之歌，迥然不同的霓虹：日本中部山区全攻略（富山、立山黑部、诹访、松本、上高地、高山、白川、高岡）">
+						<!--<div class="pic">
+							<img src="./img/section-9.jpg" alt="">
+							<div class="discuss"><img src="./img/LT.png"><span>31</span></div>
+						</div>
+						<div class="user-info">
+							<span><img src="./img/head-portrait-3.jpg"></span>
+							<span><a href="#">小盒饭</a></span>
+						</div>
+						<div class="caption">
+							<a href="#">【盒饭看世界】雪山与森林之歌，迥然不同的霓虹：日本中部山区全</a>
+						</div>
+						<div class="icon-three">
+							<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="100" height="64" viewBox="0 0 100 64"><path fill="#ED7063" d="M100 52H0V-1h100v53z"/><path fill="#AE564C" d="M0 52h10v11z"/></svg>
+						</div>-->
+						<p>精华</p>
+					</div>
+					<div class="thread-item" title="北非之春——多彩摩洛哥，环线自驾两千公里|卡萨布兰卡、马拉喀什、瓦尔扎扎特、撒哈拉、菲斯、舍夫沙万、丹吉尔、拉巴特">
+						<!--<div class="pic">
+							<img src="./img/section-10.jpg" alt="">
+							<div class="discuss"><img src="./img/LT.png"><span>15</span></div>
+						</div>
+						<div class="user-info">
+							<span><img src="./img/head-portrait-4.jpg" alt=""></span>
+							<span><a href="#">硕饱儿</a></span>
+						</div>
+						<div class="caption">
+							<a href="#">北非之春——多彩摩洛哥，环线自驾两千公里|卡萨布兰卡、马拉喀</a>
+						</div>
+						<div class="icon-three">
+							<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="100" height="64" viewBox="0 0 100 64"><path fill="#ED7063" d="M100 52H0V-1h100v53z"/><path fill="#AE564C" d="M0 52h10v11z"/></svg>
+						</div>-->
+						<p>精华</p>
+					</div>
+				</div>
+				<div class="thread1">
+					<div class="thread-item" title="法罗群岛自驾+徒步：探秘北大西洋最后的遗世秘境">
+						<!--<div class="pic">
+							<img src="./img/section-11.jpg" alt="">
+							<div class="discuss"><img src="./img/LT.png"><span>32</span></div>
+						</div>
+						<div class="user-info">
+							<span><img src="./img/head-portrait-5.jpg" alt=""></span>
+							<span><a href="#">荒梁</a></span>
+						</div>
+						<div class="caption">
+							<a href="#">法罗群岛自驾+徒步：探秘北大西洋最后的遗世秘境</a>
+						</div>
+						<div class="icon-three">
+							<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="100" height="64" viewBox="0 0 100 64"><path fill="#ED7063" d="M100 52H0V-1h100v53z"/><path fill="#AE564C" d="M0 52h10v11z"/></svg>
+						</div>-->
+						<p>精华</p>
+					</div>
+					<div class="thread-item" title="印度绝色：过最疯狂的节日，看最幸福的笑脸——洒红节狂欢指南【完】">
+						<!--<div class="pic">
+							<img src="./img/section-12.jpg" alt="">
+							<div class="discuss"><img src="./img/LT.png"><span>14</span></div>
+						</div>
+						<div class="user-info">
+							<span><img src="./img/head-portrait-6.jpg" alt=""></span>
+							<span><a href="#">Tino-Leung</a></span>
+						</div>
+						<div class="caption">
+							<a href="#">印度绝色：过最疯狂的节日，看最幸福的笑脸——洒红节狂欢指南</a>
+						</div>
+						<div class="icon-three">
+							<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="100" height="64" viewBox="0 0 100 64"><path fill="#ED7063" d="M100 52H0V-1h100v53z"/><path fill="#AE564C" d="M0 52h10v11z"/></svg>
+						</div>-->
+						<p>精华</p>
+					</div>
+					<div class="thread-item" title="纵行巴尔干--1车4人3国9日（塞尔维亚+波黑+黑山“浮潜”游）（附景点GPS）">
+						<!--<div class="pic">
+							<img src="./img/section-13.jpg" alt="">
+							<div class="discuss"><img src="./img/LT.png"><span>14</span></div>
+						</div>
+						<div class="user-info">
+							<span><img src="./img/head-portrait-7.jpg" alt=""></span>
+							<span><a href="#">相交平行线Jack</a></span>
+						</div>
+						<div class="caption">
+							<a href="#">纵行巴尔干--1车4人3国9日（塞尔维亚+波黑+黑山“浮潜”游</a>
+						</div>
+						<div class="icon-three">
+							<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="100" height="64" viewBox="0 0 100 64"><path fill="#ED7063" d="M100 52H0V-1h100v53z"/><path fill="#AE564C" d="M0 52h10v11z"/></svg>
+						</div>-->
+						<p>精华</p>
+					</div>
+					<div class="thread-item" title="邂逅欧若拉，枫叶做霓裳——加拿大秋日自驾国家公园极光之旅">
+						<!--<div class="pic">
+							<img src="./img/section-14.jpg" alt="">
+							<div class="discuss"><img src="./img/LT.png"><span>14</span></div>
+						</div>
+						<div class="user-info">
+							<span><img src="./img/head-portrait-8.jpg" alt=""></span>
+							<span><a href="#">Helen晓世界</a></span>
+						</div>
+						<div class="caption">
+							<a href="#">邂逅欧若拉，枫叶做霓裳——加拿大秋日自驾国家公园极光之旅</a>
+						</div>
+						<div class="icon-three">
+							<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="100" height="64" viewBox="0 0 100 64"><path fill="#ED7063" d="M100 52H0V-1h100v53z"/><path fill="#AE564C" d="M0 52h10v11z"/></svg>
+						</div>-->
+						<p>精华</p>
+					</div>
+				</div>
+			</div>
+			<!--<div class="palette-list">
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>-->
+			<div class="more">
+				<a href="#">查看更多游记</a>
+			</div>
+		</div>
+		<!--主体内容④-->
+		<div class="section-four">
+			<h3>免费体验，限时申领中</h3>
+			<h3>特别策划</h3>
+			<div class="advtry">		
+				<div class="advtry-item">
+					<div class="pic">
+						<img src="./img/img-1.jpg">
+					</div>
+					<a href="#">京阪旅行体验官招募</a><br>
+					<em>价值&nbsp;￥13888.00</em><br>
+					<span>免费体验名额3个</span>
+					<a href="#" class="btn-link">查看详情</a>
+					<span id="time"></span>
+				</div>
+				<div class="advtry-item">
+					<img src="./img/img-2.png">
+					<div class="info">
+						<img src="./img/91c9.jpg">
+						<a href="#">adidasTERREX体验官招募</a>
+						<em>价值 ￥899.00</em><br>
+						<span>免费体验名额 5 个</span>
+					</div>
+					<div class="advtry-user">
+						<span>近期参与</span>
+						<ul>
+							<li><img src="./img/user-1.jpg"></li>
+							<li><img src="./img/user-2.jpg"></li>
+							<li><img src="./img/user-3.jpg"></li>
+							<li><img src="./img/user-4.jpg"></li>
+							<li><img src="./img/user-5.jpg"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="advtry-item" id="tabs">
+					<ul id="tab">
+						<li>
+							<a href="#pic1" data-toggle="tab" data-target="#pic1">地球研习社</a>
+						</li>
+						<li>
+							<a href="#pic2" data-toggle="tab" data-target="#pic2">Q-story</a>
+						</li>
+						<li>
+							<a href="#pic3" data-toggle="tab" data-target="#pic3">去也</a>
+						</li>
+					</ul>
+					<div id="pic">
+						<img id="pic1" src="./img/1f2q.jpg">
+						<img id="pic2"  src="./img/1feb.jpg">
+						<img id="pic3"  src="./img/f6f5.jpg">
+					</div>
+					<a href="#">查看更多</a>
+				</div>
+			</div>
+		</div>
+		<!--底部内容一-->
+		<footer class="footer-ewm">
+			<div class="qyer-content">
+				<div class="qyer-app">
+					<ul>
+						<li>穷游APP</li>
+						<li>
+							<img src="./img/ewm-5.png">
+							<p>穷游锦囊</p>
+						</li>
+						<li>
+							<img src="./img/ewm-6.png">
+							<p>行程助手</p>
+						</li>
+						<li>
+							<img src="./img/ewm-7.png">
+							<p>穷游app</p>
+						</li>
+					</ul>
+				</div>
+				<div class="qyer-ewm">
+					<ul>
+						<li>微信号</li>
+						<li>
+							<img src="./img/ewm-1.png">
+							<p>行程助手</p>
+						</li>
+						<li>
+							<img src="./img/ewm-2.png">
+							<p>穷游网</p>
+						</li>
+						<li>
+							<img src="./img/ewm-3.png">
+							<p>穷游锦囊</p>
+						</li>
+						<li>
+							<img src="./img/ewm-4.png">
+							<p>穷游最世界</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!--底部内容二-->
+	<div class="footer">
+		<div class="parent">
+			<div class="one">
+				<div>关于我们</div>
+				<div>
+					<ul>
+					<li><a href="http://127.0.0.1:3000/story.html" target="_blank">穷游简介</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">合作伙伴</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="two">
+				<div>加入穷游</div>
+				<div><a href="#">招聘职位</a></div>
+			</div>
+			<div class="three">
+				<div>网站条款</div>
+				<div>
+					<ul>
+						<li><a href="#">会员条款</a></li>
+						<li><a href="#">社区指南</a></li>
+						<li><a href="#">版权声明</a></li>
+						<li><a href="#">免责声明</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="four">
+				<div>帮助中心</div>
+				<div>
+					<ul>
+						<li><a href="#">新手上路</a></li>
+						<li><a href="#">使用帮助</a></li>
+						<li><a href="#">网站地图</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="five">
+				<img src="./img/chengxin.png">
+				<img src="./img/trustutn_large.jpg">
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="footer_img">
+				<img src="./img/logo.png">
+			</div>
+			<div>
+				<div>2004-2017&nbsp;&copy;&nbsp;穷游网™&nbsp;qyer.com&nbsp;All&nbsp;rights reserved.&nbsp;&nbsp;Version v5.57&nbsp;&nbsp;<a href="#">京ICP备12003524号</a>&nbsp;&nbsp;京公网安备11010102001935&nbsp;&nbsp;京ICP证140673号&nbsp;<a href="#">营业执照</a>&nbsp;<a href="#">经营许可证</a></div>
+				<div>
+					<a href="#">穷游网</a>为<a href="#">旅行者</a>提供原创实用的<a href="#">出境游</a><a href="#">旅行指南</a>和<a href="#">旅游攻略</a>、<a href="#">旅行社区</a>和<a href="#">问答</a>交流平台，并提供<a href="#">签证</a>、<a href="#">保险</a>、<a href="#">机票</a>、<a href="#">酒店预订</a>、<a href="#">租车</a>等服务
+				</div>
+			</div>
+		</div>
+	</div>	
+		<!--底部内容三-->
+		<div class="footer-links">
+			<span>友情链接</span>
+			<p>
+				<a href="#">美术教育</a>&nbsp;|&nbsp;
+				<a href="#">中国交通网</a>&nbsp;|&nbsp;
+				<a href="#">长途汽车票</a>&nbsp;|&nbsp;
+				<a href="#">在线教育</a>&nbsp;|&nbsp;
+				<a href="#">金运之旅</a>&nbsp;|&nbsp;
+				<a href="#">豌豆荚安卓市场</a>&nbsp;|&nbsp;
+				<a href="#">凤凰网旅游</a>&nbsp;|&nbsp;
+				<a href="#">凯撒旅游</a>&nbsp;|&nbsp;
+				<a href="#">神州租车</a>&nbsp;|&nbsp;
+				<a href="#">携程攻略社区</a>&nbsp;|&nbsp;
+				<a href="#">蜂鸟网</a>&nbsp;|&nbsp;
+				<a href="#">天巡国际机票</a>&nbsp;|&nbsp;
+				<a href="#">游谱旅行网</a>&nbsp;|&nbsp;
+				<a href="#">中国签证资讯网</a>&nbsp;|&nbsp;
+				<a href="#">梦之旅</a>&nbsp;|&nbsp;
+				<a href="#">九游网</a>&nbsp;|&nbsp;
+				<a href="#">北京国旅官网</a>&nbsp;|&nbsp;
+				<a href="#">同程旅游</a>&nbsp;|&nbsp;
+				<a href="#">相约久久旅游网</a>&nbsp;|&nbsp;
+				<a href="#">途牛旅游网</a>&nbsp;|&nbsp;
+				<a href="#">日租房</a>&nbsp;|&nbsp;
+				<a href="#">遨游网</a>&nbsp;|&nbsp;
+				<a href="#">携程旅游网</a>&nbsp;|&nbsp;
+				<a href="#">春秋航空</a>&nbsp;|&nbsp;
+				<a href="#">户外资料网</a>&nbsp;|&nbsp;
+				<a href="#">爱旅行网</a>&nbsp;|&nbsp;
+				<a href="#">神舟国旅</a>&nbsp;|&nbsp;
+				<a href="#">拉拉勾旅游网</a>&nbsp;|&nbsp;
+				<a href="#">火车票</a>&nbsp;|&nbsp;
+				<a href="#">米胖旅游网</a>&nbsp;|&nbsp;
+				<a href="#">绿野网</a>&nbsp;|&nbsp;
+				<a href="#">天气预报15天查询</a>&nbsp;|&nbsp;
+				<a href="#">走遍欧洲</a>&nbsp;|&nbsp;
+				<a href="#">酒店预订</a>&nbsp;|&nbsp;
+				<a href="#">欣欣旅游网</a>&nbsp;|&nbsp;
+				<a href="#">驴妈妈旅游网</a>&nbsp;|&nbsp;
+				<a href="#">多多驿站</a>&nbsp;|&nbsp;
+				<a href="#">艺龙旅游指南</a>
+			</p>
+		</div>
+</body>
+</html>
