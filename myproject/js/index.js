@@ -32,8 +32,9 @@ for(var tab of tabs){
     var span=document.getElementById("time");
     span.innerHTML="距离结束："+d+"天"+h+"小时"+m+"分"+s+"秒";
 		} else {
-				clearIterval(timer);
+				//clearIterval(timer);
 				timer=null;
+				var span=document.getElementById("time");
 				span.innerHTML="活动已结束";
 			}
 	}
